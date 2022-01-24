@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather app</title>
+    <script src="weather.js">
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="weatherstyle.css">
+
+</head>
+
+<body background=https://images.unsplash.com/photo-1503327431567-3ab5e6e79140?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80 style='background-repeat: no-repeat; background-position: center; background-size:100%; height: 100%;'
+    style="text-align: center;">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h1>
+                    WELCOME
+                </h1>
+                <P>Hover your mouse here to check weather report</P>
+                <br><br>
+                <i class="fas fa-cloud-sun fa-10x"></i>
+            </div>
+            <div class="flip-card-back ">
+                <div class="card bg-danger text-white ">
+
+                    <div class="card-body">
+
+
+                        <hr>
+                        <div class="search-bar ">
+                            <input type="search" id="mycity" placeholder="Enter a city name ">
+                            <i class="fas fa-search fa-lg " id="mycity" onclick="myfunc()" style="margin:0.5em; "> </i>
+
+                        </div>
+                        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:blanchedalmond ">Today's Whether Report:</h1>
+                        <table style="border: 2px solid whitesmoke; width:100% ">
+                            <tr>
+                                <th>
+                                    <p>TEMP:</p>
+                                </th>
+                                <th>
+                                    <p id="mypara"> </p>
+                                </th>
+                            </tr>
+                            <hr>
+                            <tr>
+                                <th>
+                                    <p>HUMIDITY:
+                                    </p>
+                                </th>
+                                <th id="hum"></th>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <p>TEMP_MAX:</p>
+                                </th>
+                                <th id="tmax">
+                                </th>
+
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <p>TEMP_MIN:</p>
+                                </th>
+                                <th id="tmin"></th>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <p>IMG:</p>
+                                </th>
+
+                                <th><img id="myimg" src=' ' /></th>
+                            </tr>
+
+                        </table>
+                        <hr><br><br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
