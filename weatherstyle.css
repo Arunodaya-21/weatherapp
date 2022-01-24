@@ -1,0 +1,76 @@
+    body {
+        height: 100vh;
+    }
+    
+    .card {
+        margin: auto;
+        height: 500px;
+        width: 400px;
+        color: white;
+        padding: 0.5cm;
+        width: 100%;
+        max-width: 420px;
+        background-color: black;
+    }
+    
+    .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: white;
+    }
+    
+    #mycity {
+        border: none;
+        outline: none;
+        border-radius: 18px;
+        padding: 0.5em;
+        background: #7c7c7c;
+        color: white;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+    }
+    
+    .flip-card {
+        background-color: transparent;
+        width: 400px;
+        height: 450px;
+        perspective: 1000px;
+        margin: 50px auto;
+    }
+    
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+        background: black;
+        color: white;
+        height: 450px;
+    }
+    
+    .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+    }
